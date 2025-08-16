@@ -121,6 +121,7 @@ type ResponseFormatJSONSchemaProperty struct {
 	AdditionalProperties bool                                         `json:"additionalProperties"`
 	Required             []string                                     `json:"required,omitempty"`
 	Ref                  string                                       `json:"$ref,omitempty"`
+	AnyOf                []*ResponseFormatJSONSchemaProperty          `json:"anyOf,omitempty"`
 }
 
 type ResponseFormatJSONSchema struct {
