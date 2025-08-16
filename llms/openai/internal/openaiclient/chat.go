@@ -113,7 +113,7 @@ type ToolCall struct {
 }
 
 type ResponseFormatJSONSchemaProperty struct {
-	Type                 string                                       `json:"type"`
+	Type                 string                                       `json:"type,omitempty"`
 	Description          string                                       `json:"description,omitempty"`
 	Enum                 []interface{}                                `json:"enum,omitempty"`
 	Items                *ResponseFormatJSONSchemaProperty            `json:"items,omitempty"`
